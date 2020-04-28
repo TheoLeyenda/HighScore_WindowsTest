@@ -3,10 +3,12 @@
 #include <string>
 #include "../glui_2.37_x86_msvc2015/include/GL/freeglut.h"
 #include "../glui_2.37_x86_msvc2015/include/GL/glut.h"
+#include "../Libreria_HighScore/Release/HSSHighscore.h"
 using namespace std;
-
+using namespace HS;
 void DrawTextInWindows(const char *text, int length, int x, int y)
 {
+	
 	glMatrixMode(GL_PROJECTION);
 	double *matrix = new double[16];
 	glGetDoublev(GL_PROJECTION_MATRIX, matrix);
@@ -29,7 +31,7 @@ void DrawTextInWindows(const char *text, int length, int x, int y)
 
 void Display_cb() {
 	string textTest;
-	textTest = "Este es un texto de prueba jaja saludos.";
+	textTest = "HighScore";
 
 	DrawTextInWindows(textTest.data(), textTest.size(), 50, 50);
 
@@ -38,6 +40,7 @@ void Display_cb() {
 
 int main(int argc, char** argv) 
 {
+	
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE);
 	glutInitWindowSize(640, 480);
