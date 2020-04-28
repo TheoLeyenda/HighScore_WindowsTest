@@ -1,8 +1,7 @@
 ﻿  Source.cpp
   Generando código
-  51 of 80 functions (63.8%) were compiled, the rest were copied from previous compilation.
-    16 functions were new in current compilation
-    4 functions had inline decision re-evaluated but remain unchanged
+  6 of 122 functions ( 4.9%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
   Generación de código finalizada
-HSSHighscore.lib(HSSHighscore.obj) : warning LNK4099: no se encontró PDB 'HSSHighscore.pdb' con 'HSSHighscore.lib(HSSHighscore.obj)' o en 'C:\Users\Theo\Desktop\HighScore_WindowsTest\HighScore_WindowsTest\Release\HSSHighscore.pdb'; se vinculará el objeto sin tener en cuenta información de depuración
   Test.vcxproj -> C:\Users\Theo\Desktop\HighScore_WindowsTest\HighScore_WindowsTest\Release\Test.exe
