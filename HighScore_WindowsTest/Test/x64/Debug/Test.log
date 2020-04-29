@@ -1,2 +1,4 @@
 ﻿  Source.cpp
+c:\users\theo\desktop\highscore_windowstest\highscore_windowstest\test\source.cpp(35): warning C4267: 'argumento': conversión de 'size_t' a 'int'; posible pérdida de datos
+c:\users\theo\desktop\highscore_windowstest\highscore_windowstest\test\source.cpp(45): warning C4267: 'argumento': conversión de 'size_t' a 'int'; posible pérdida de datos
 LINK : fatal error LNK1104: no se puede abrir el archivo 'freeglut.lib'

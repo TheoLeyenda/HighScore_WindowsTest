@@ -3,7 +3,7 @@
 #include <string>
 #include "../glui_2.37_x86_msvc2015/include/GL/freeglut.h"
 #include "../glui_2.37_x86_msvc2015/include/GL/glut.h"
-#include "../Libreria_HighScore/Release/HSSHighscore.h"
+#include "../Libreria_HighScore/HSSHighscore.h"
 using namespace std;
 using namespace HS;
 void DrawTextInWindows(const char *text, int length, int x, int y)
@@ -37,12 +37,12 @@ void Display_cb() {
 	for(int i = 0; i < listSize; i++)
 	{
 		string text1 = returnRankEntry(i).name.c_str();
-		string text2 = " ";
+		string text2 = " - ";
 		
 		string text3;
 		text3 = to_string(returnRankEntry(i).score);
 		textTest = text1 + text2 + text3;
-		DrawTextInWindows(textTest.data(), textTest.size(), 120, 530 - ((i+1)*25));
+		DrawTextInWindows(textTest.data(), textTest.size(), 100, 530 - ((i+1)*25));
 
 	}
 
@@ -59,19 +59,19 @@ int main(int argc, char** argv)
 	ScoreEntry score5;
 
 	score1.name = "Sergio Baretto (Apruebame por favor)";
-	score1.score = 99999999;
+	score1.score = 300;
 
 	score2.name = "Matias Karplus (Ta piola tu libreria :D)";
-	score2.score = 90000000;
+	score2.score = 250;
 
 	score3.name = "Theo Leyenda";
-	score3.score = 10000000;
+	score3.score = 100;
 
 	score4.name = "Ivan Castellano";
-	score4.score = 9500000;
+	score4.score = 50;
 
 	score5.name = "Cristian Cuzumano";
-	score5.score = 9000000;
+	score5.score = 25;
 
 
 	ScoreEntry scoreEnemy[]{score1,score2, score3, score4, score5};
